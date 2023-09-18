@@ -5,7 +5,10 @@ const SearchResult = ({ data }) => {
   return (
     <FoodCardContainer>
         <FoodCards>
+          {data?.map((food) => (
+            <FoodCard key = {food.name}>{food.text}</FoodCard>
 
+            ))}
         </FoodCards>
       </FoodCardContainer>
   );
@@ -22,3 +25,4 @@ background-size: cover;
 `;
 
 const FoodCards = styled.div``;
+const FoodCard = styled.div``;
