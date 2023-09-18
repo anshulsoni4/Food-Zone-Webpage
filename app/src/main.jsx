@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #323334;
     color: white;
     min-height: 100vh;
+    font-family: 'Inter', sans-serif;
   }
 `;
 
